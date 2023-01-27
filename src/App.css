@@ -1,0 +1,122 @@
+body{
+  background-color: rgb(28, 21, 26);
+  color:white;
+  position:relative;
+}
+body::before{
+  background-image: url('./Components/images/bg.jpg');
+  content:'';
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+}
+p, h1{
+  margin:0;
+}
+
+.home-content-container h1{
+  font-size: 60px;
+}
+
+.brand-btn{
+  border:1px solid rgb(255, 0, 81);
+  color:white;
+}
+.brand-btn:hover{
+  background-color: rgb(255, 0, 81);
+  color:white;
+  transition: all ease 0.5s;
+}
+.brand-text{
+  color:rgb(255, 0, 81);
+}
+.my-nav-style li a{
+  border-radius: 15px;
+  border:1px solid transparent;
+}
+.my-nav-style li a:hover{
+  border:1px solid rgb(255, 0, 81);
+}
+.active{
+  background-color: rgb(255, 0, 81);
+  border-radius: 15px;
+  color:black;
+  transition: all ease 0.9s;
+  border:1px solid rgb(255, 0, 81);
+}
+.myicon{
+  font-size: 50px;
+  color:white;
+}
+.homeicon{
+  color:white;
+}
+.social-links a{
+  text-decoration: none;
+  color:white;
+}
+
+.service-box{
+  /* border:1px solid rgb(255, 0, 81); */
+  padding:25px;
+  margin-top:20px;
+  position: relative;
+  cursor: pointer;
+}
+.service-box::before{
+  content: '';
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  opacity: 0.1;
+  background-image: url('./Components/images/bg.jpg');
+}
+.service-box:hover{
+  background-color: rgb(255, 0, 81);
+  /* border:1px solid rgb(255, 0, 81); */
+  transition: all ease 0.6s;
+}
+.service-box:hover .myicon{
+  color:white;
+}
+
+.skills{
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 0, 81);
+}
+.singleSkill{
+  margin-right: 5px;
+  background-color: rgb(255, 0, 81);
+  border-radius: 10px;
+  padding:5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.lowskill{
+  margin-right: 5px;
+  background-color: rgb(120, 45, 69);
+  border-radius: 10px;
+  padding:5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.project-container{
+  transition: all ease 0.5s;
+}
+.project-links{
+  display: none;
+  background-color: rgba(35, 22, 31, 0.6);
+  transition: all ease 0.5s;
+}
+.project-container:hover .project-links{
+  display: block;
+  background-color: rgba(35, 22, 31, 0.8);
+  transition: all ease 0.5s;
+}
